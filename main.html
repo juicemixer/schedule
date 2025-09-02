@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>schedule</title>
+</head>
+<body style="text-align:center; margin-top:50px;">
+  <img id="dayImage" width="1800">
+
+  <script>
+    const today = new Date();
+    const day = today.getDate();
+
+    const evenImage = "https://ibb.co/yByJfxX7";
+    const oddImage = "https://ibb.co/N6HGfH0f";
+
+    document.getElementById("dayImage").src = (day % 2 === 0) ? evenImage : oddImage;
+  </script>
+</body>
+</html>
